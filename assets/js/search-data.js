@@ -383,7 +383,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-sparse-autoencoder-neural-operators-was-accepted-as-an-oral-presentation-at-the-neurips-2025-unireps-workshop",
           title: 'Our work on Sparse Autoencoder Neural Operators was accepted as an oral presentation...',
           description: "",
-          section: "News",},{id: "news-i-was-awarded-the-eth-zurich-student-summer-research-fellowship-and-i-will-be-joining-the-ryco-lab-for-the-summer",
+          section: "News",},{id: "news-i-was-awarded-the-eth-zurich-student-summer-research-fellowship-and-i-will-be-joining-ryco-lab-for-the-summer",
           title: 'I was awarded the ETH Zurich Student Summer Research Fellowship, and I will...',
           description: "",
           section: "News",},{id: "news-i-m-very-honored-to-receive-the-mellon-mays-undergraduate-fellowship-for-my-research-at-caltech",
