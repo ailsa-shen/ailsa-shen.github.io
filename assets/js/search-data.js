@@ -24,22 +24,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-mechanistic-interpretability-with-sparse-autoencoder-neural-operators-has-been-accepted-to-neurips-2026",
           title: 'Our paper Mechanistic Interpretability with Sparse Autoencoder Neural Operators has been accepted to...',
           description: "",
-          section: "News",},{id: "projects-robust-control-of-linear-dynamical-systems",
-          title: 'Robust Control of Linear Dynamical Systems',
-          description: "Control methods for discrete-time LDS under stochastic and adversarial uncertainties.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/robust-control-lds.html";
-            },},{id: "projects-sparse-autoencoder-neural-operators",
-          title: 'Sparse Autoencoder Neural Operators',
-          description: "Mechanistic interpretability in infinite-dimensional function spaces via sparse autoencoder neural operators.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/sae-neural-operators.html";
-            },},{id: "projects-visual-grounding-in-multi-modal-language-models",
-          title: 'Visual Grounding in Multi-Modal Language Models',
-          description: "Research on visual grounding in multi-modal language models at MIT CAP Lab.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/visual-grounding-mmlm.html";
-            },},{id: "teachings-ph-1a-classical-mechanics-and-electromagnetism",
+          section: "News",},{id: "teachings-ph-1a-classical-mechanics-and-electromagnetism",
           title: 'Ph 1a — Classical Mechanics and Electromagnetism',
           description: "Grading TA",
           section: "Teachings",handler: () => {
