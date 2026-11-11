@@ -1,0 +1,15 @@
+<div class="col-12 col-md-5 about-header-profile profile">
+  {% if page.profile.image %}
+    {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+    {% if page.profile.image_circular %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+    {% else %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+    {% endif %}
+    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.42}}px, (min-width: 576px) 42vw, 95vw"{% endcapture %}
+    {%
+      include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+      cache_bust=true
+    %}
+  {% endif %}
+</div>

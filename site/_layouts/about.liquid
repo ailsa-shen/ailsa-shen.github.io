@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header about-header" id="about">
+    <div class="row align-items-start">
+      {% if page.profile and page.profile.align == 'left' %}
+        {% include about_profile.liquid %}
+      {% endif %}
+
+      <div class="{% if page.profile %}col-12 col-md-7{% else %}col-12{% endif %} about-header-text">
+        <h1 class="post-title mb-0">
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        {% if page.subtitle %}
+          <p class="desc mt-2 mb-0">{{ page.subtitle }}</p>
+        {% endif %}
+        <div class="about-intro mt-3">{{ content }}</div>
+      </div>
+
+      {% if page.profile and page.profile.align != 'left' %}
+        {% include about_profile.liquid %}
+      {% endif %}
+    </div>
+  </header>
+
+  <article class="about-sections">
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <section id="news">
+        <h2>News</h2>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <section id="publications" class="about-selected-publications">
+        <h2>Publications</h2>
+        <p class="publication-footnote">* Equal contribution</p>
+        {% include selected_papers.liquid %}
+      </section>
+    {% endif %}
+
+    <!-- Teaching -->
+    {% if page.teaching %}
+      <section id="teaching" class="about-teaching">
+        <h2>Teaching</h2>
+        {% include courses.liquid %}
+      </section>
+    {% endif %}
+
+    <!-- Misc -->
+    {% if page.misc and page.misc.enabled %}
+      <section id="misc" class="about-misc">
+        <h2>Misc</h2>
+        {{ page.misc.text | markdownify }}
+      </section>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>

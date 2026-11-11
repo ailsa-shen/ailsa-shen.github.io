@@ -1,0 +1,47 @@
+<div class="about-contact-bar">
+  {% if site.data.socials.email %}
+    <a href="mailto:{{ site.data.socials.email | encode_email }}" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  {% endif %}
+  {% if site.data.socials.linkedin_username %}
+    <a
+      href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"
+      aria-label="LinkedIn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  {% endif %}
+  {% if site.data.socials.github_username %}
+    <a
+      href="https://github.com/{{ site.data.socials.github_username }}"
+      aria-label="GitHub"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+  {% endif %}
+  {% if site.data.socials.x_username %}
+    <a
+      href="https://x.com/{{ site.data.socials.x_username }}"
+      aria-label="X"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  {% endif %}
+  {% if site.data.socials.scholar_userid %}
+    <a
+      href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}"
+      aria-label="Google Scholar"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  {% endif %}
+</div>
