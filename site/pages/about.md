@@ -17,10 +17,10 @@ misc:
   text: |
     I have a rescue german shepherd named Chip and a cat named Coco. I love lakes and mountains (and Chip does too)!
 
-    <div class="misc-photo-row">
-      <img src="/assets/img/chip.jpg" alt="Chip">
-      <img src="/assets/img/chip2.jpeg" alt="Chip">
-      <img src="/assets/img/coco.jpg" alt="Coco">
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start;">
+      <img src="/assets/img/chip.jpg" alt="Chip" style="height: 220px; width: auto;">
+      <img src="/assets/img/chip2.jpeg" alt="Chip" style="height: 220px; width: auto;">
+      <img src="/assets/img/coco.jpg" alt="Coco" style="height: 220px; width: auto;">
     </div>
 
 announcements:
