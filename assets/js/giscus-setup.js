@@ -9,7 +9,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "ailsa-shen/personal-web",
+    "data-repo": "ailsa-shen/ashen",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
