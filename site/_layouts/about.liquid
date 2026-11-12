@@ -20,6 +20,12 @@ layout: default
         {% if page.subtitle %}
           <p class="desc mt-2 mb-0">{{ page.subtitle }}</p>
         {% endif %}
+        {% if site.data.socials.email %}
+          <a class="about-email" href="mailto:{{ site.data.socials.email }}">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>{{ site.data.socials.email }}</span>
+          </a>
+        {% endif %}
         <div class="about-intro mt-3">{{ content }}</div>
       </div>
 

@@ -109,6 +109,12 @@ ul.task-list input[type="checkbox"] {
   margin-top: 4rem;
 }
 
+#news {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.12);
+}
+
 .news {
   .news-date {
     width: 1%;
@@ -166,6 +172,19 @@ ul.task-list input[type="checkbox"] {
     @media (max-width: 767px) {
       margin-top: 1.5rem;
     }
+  }
+}
+
+.about-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  color: var(--global-theme-color);
+
+  i,
+  span {
+    color: inherit;
   }
 }
 

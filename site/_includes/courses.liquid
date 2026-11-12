@@ -1,7 +1,8 @@
-{% if site.teachings %}
+{% assign teaching_page = site.pages | where: 'url', '/teaching/' | first %}
+{% assign all_courses = teaching_page.courses | sort: 'sort_order' | reverse %}
+{% if all_courses != blank %}
   <div class="courses">
     <div class="course-list">
-      {% assign all_courses = site.teachings | sort: 'sort_order' | reverse %}
       {% for course in all_courses %}
         <div class="course-item">
           <h3 class="course-title">{{ course.title }}</h3>

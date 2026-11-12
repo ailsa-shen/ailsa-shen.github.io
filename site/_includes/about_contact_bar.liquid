@@ -1,9 +1,4 @@
 <div class="about-contact-bar">
-  {% if site.data.socials.email %}
-    <a href="mailto:{{ site.data.socials.email | encode_email }}" aria-label="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-  {% endif %}
   {% if site.data.socials.linkedin_username %}
     <a
       href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"

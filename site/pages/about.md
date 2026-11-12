@@ -15,7 +15,7 @@ teaching: true # includes teaching courses on the about page
 misc:
   enabled: true # show a misc section at the bottom of the about page
   text: |
-    I have a rescue german shepherd named Chip and a cat named Coco. I love lakes and mountains (and Chip does too)!
+    I have a rescue German shepherd named Chip and a cat named Coco. I love lakes and mountains (and Chip does too)!
 
     <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start;">
       <img src="/assets/img/chip.jpg" alt="Chip" style="height: 220px; width: auto;">
@@ -26,7 +26,7 @@ misc:
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include every item on the News page
 
 latest_posts:
   enabled: false

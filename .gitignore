@@ -20,3 +20,6 @@ site/_data/citations.yml
 Gemfile.lock
 node_modules/
 vendor
+/.dockerignore
+/Dockerfile
+/docker-compose.yml
